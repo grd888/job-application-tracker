@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className=" text-black mb-6 text-6xl font-bold">
               A better way to track your job application.
             </h1>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-10 text-xl">
               Capture, organize, and track your job applications in one place.
             </p>
             <div className="flex flex-col items-center gap-4">
