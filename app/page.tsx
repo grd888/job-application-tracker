@@ -1,7 +1,7 @@
+import ImageTabs from "@/components/image-tabs";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -32,38 +32,7 @@ export default function Home() {
           </div>
         </section>
         {/* Hero Images Section with Tabs */}
-        <section className="border-t bg-white py-16">
-          <div className="container mx-auto px-4">
-            {/* Tabs */}
-            <div className="mx-auto max-w-6xl">
-              <div className="flex mb-8 justify-center gap-2">
-                <Button>Organize Applications</Button>
-                <Button>Get Hired</Button>
-                <Button>Manage Boards</Button>
-              </div>
-              <div className="relative mx-auto max-w-5xl overflow-hidden rounded-lg border border-gray-200 shadow-xl">
-                <Image
-                  src="/hero-images/hero1.png"
-                  alt="Organize Applications"
-                  width={1200}
-                  height={800}
-                />
-                <Image
-                  src="/hero-images/hero2.png"
-                  alt="Get Hired"
-                  width={1200}
-                  height={800}
-                />
-                <Image
-                  src="/hero-images/hero3.png"
-                  alt="Manage Boards"
-                  width={1200}
-                  height={800}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <ImageTabs />
       </main>
     </div>
   );
