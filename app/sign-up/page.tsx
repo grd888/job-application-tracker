@@ -44,6 +44,7 @@ export default function Signup() {
       } else {
         router.push("/dashboard");
       }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (e) {
       setError("An unexpected error occurred");
     } finally {
