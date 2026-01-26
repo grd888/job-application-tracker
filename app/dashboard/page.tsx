@@ -17,7 +17,6 @@ export default async function Dashboard() {
     name: "Job Hunt",
   }).populate({path: "columns"});
 
-  console.log(`Board: ${board}`);
 
   return (
     <div className="min-h-screen bg-white">
